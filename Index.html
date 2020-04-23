@@ -1,40 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       
+        <head>
         <img src="Images/KPicRed.jpg">
             <title> KPatel Resume</title>  
+            
                 <article>    
-                        Kimberly Patel<br>
+                        <span id="name">Kimberly Patel</span><br>
                         (m) 801-915-7957<br>
                         kimmbie@gmail.com
                 </article> 
    
         <link rel="Stylesheet" href="CSS\Stylesheet1.css">  
+       
     </head> 
 <body>     
  <hr>
+
     <nav>
-        <div class="container">
-            <a href="#home">Home</a>
-            <a href="#certification">Certification</a>
-            <a href="#education and training">Education and Training</a>
-            <a href="#volunteer">Volunteer</a>
-            <a href="#personal experience">Personal Experience</a>
-            <a href="#technical skills">Technical Skills</a>
-            <a href="#portfolio & projects">Portfolio & Projects</a>
-            <a href="#Contact">Contact</a>
+        <div class="container-md">
+            <nav class="navbar navbar-expand-.md">
+            <button type="button" class="btn btn-link">
+               <!-- <span id="bar">
+                    <a class="navbar-active" href="#home"></a> </span> -->
+                <span id="bar">  
+                    <a class="navbar-brand" href="#certification">Certification</a> </span>
+                <span id="bar">
+                    <a class="navbar-brand" href="#education and training">Education and Training</a> </span>
+                <span id="bar">   
+                    <a class="navbar-brand" href="#volunteer">Volunteer</a> </span>
+                <span id="bar">    
+                    <a class="navbar-brand" href="#personal experience">Personal Experience</a> </span>
+                <span id="bar">
+                    <a class="navbar-brand" href="#technical skills">Technical Skills</a> </span>
+                <span id="bar">    
+                    <a class="navbar-brand" href="#portfolio & projects">Portfolio & Projects</a> </span>
+                <span id="bar">    
+                    <a class="navbar-brand" href="#Contact">Contact</a> </span>
+                </button>
+    </nav> 
+</div> 
+</nav>
         </div>
     </nav>
 <hr>
+
     <section id="home">
      <div id="home">
-        <h4> 
-            Personal Bio: 
+        <h4>     
+            Introduction: 
         </h4> 
-                Passionate about Web Development and Design.  In 2017 I was asked to create a Patient Resource Website
+        <div class="container-sm">
+                I am passionate about Web Development and Design.  In 2017 I was asked to create a Patient Resource Website
                 for a private physician.   This was created through Adobe Muse and I am excited to be able to re-create 
                 this site for the medical population using proper HTML, CSS and JavaScript.  Through the creation 
                 of that website I discovered how much I enjoy creating webpages.  Experienced medical claims adjudicator 
@@ -43,6 +64,7 @@
                 all aspects of short film media production.  Graduated from University of Utah with Bachelor of Science 
                 and a minor in Criminology.  Additional education through Salt Lake Community College for full-stack web 
                 development and design.
+           </div>
         </div>
     </section>
 <hr>
@@ -141,19 +163,31 @@
     <section id="technical skills">
         <div id="technical skills">
             <h3>Technical Skills:</h3>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>HTML</li>
-                    <li>CSS</li>	
-                    <li>JavaScript</li>	
-                    <li>PHP</li>	
-                    <li>WordPress</li>	
-                    <li>Epic Systems Healthcare EMR</li>		
-                    <li>Adobe Muse</li>	
-                    <li>Adobe Premier Pro</li>
-                    <li>Microsoft Word</li>
-                    <li>Microsoft Excel</li>	
-                </ul>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-flush">HTML</li>
+                        <li class="list-group-flush">CSS</li>
+                        <li class="list-group-flush">JavaScript</li>
+                        <li class="list-group-flush">PHP/MySQL</li>
+                  </div>
+                  <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-flush">WordPress</li>
+                        <li class="list-group-flush">Adobe Photoshop</li>
+                        <li class="list-group-flush">Adobe Premier Pro</li>
+                        <li class="list-group-flush">Adobe Muse</li>
+                  </div>
+                  <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-flush">Microsoft Word</li>
+                        <li class="list-group-flush">Microsoft Excel</li>
+                        <li class="list-group-flush">Epic Systems Healthcare EMR</li>
+                        </ul>
+                  </div>
+              </div>
+            </div>
         </div>
     </section>
 <hr>
@@ -172,43 +206,46 @@
 <hr>
 
     <section id="Contact"><!--name, phone, email, reason for contacting and basic details-->
+        
         <h3>Contact</h3>
             <form method="POST">
-                <label>
+                <label> <span id="radio">
                     Name:
-                        <input type="text" name="full name" placeholder="Your Name">
+                        <input type="text" name="full name" placeholder="Your Name"></span>
                 </label>
-            <br/>
-                <label>
+                <label> <span id="radio">
                     Email:
-                        <input type="text" name="email" placeholder="email@email.com">
+                        <input type="text" name="email" placeholder="email@email.com"> </span>
+                </label>
+            
+                <label> <span id="radio">
+                    Phone Number:
+                        <input type="text" name="phonenumber" placeholder="800-555-5555"> </span>
                 </label>
             </form>
             </br>
-                <label>
-                    Phone Number:
-                        <input type="text" name="phonenumber" placeholder="800-555-5555">
-                </label>
-            </br>
                 <p>Reason for Contacting:</p>
-                    <div id="radio">
+                    <span id="radio">
                     <label>
                         <input type="radio" name="reasonforcontacting" value="Testimonial">Testimonial
-                    </label>
+                    </label></span>
+                 <span id="radio">
                 <label>
                         <input type="radio" name="reasonforcontacting" value="Reference">Reference
-                </label>
+                </label></span>
+                <span id="radio">
                     <label>
                         <input type="radio" name="reasonforcontacting" value="Work Request">Work Request
-                </label> 
-            </div>
+                </label> </span>
+            
                 <p>
                
                 <label>Comments:
         </br>
             <textarea name="comment" rows="10" cols="100"></textarea>
                 </label></br>
-                     <input type="submit"></p>
+                <button type="button" class="btn btn-info" input type="submit">Submit</button>
+                    </p>
             </form>
         </section>
 
@@ -232,5 +269,8 @@
 <footer>
     
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
