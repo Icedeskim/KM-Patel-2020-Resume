@@ -1,8 +1,8 @@
 
 function greetUser()  {
-    let name = document.getElementById('greetingName').value
+    let name = document.getElementById('greetingName').value;
     document.getElementById('userName').innerHTML = name;
-    $('#getUserName').modal('hide');
+    $('#modal-body').modal('hide');
     $('#getUserName').modal('show');
 }
 $(document).ready(() => {
