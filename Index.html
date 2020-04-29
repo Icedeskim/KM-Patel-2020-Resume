@@ -209,18 +209,18 @@
         
         <h3>Contact</h3>
             <form method="POST">
-                <label> <span id="radio">
+                <label> <span Id="radio">
                     Name:
                         <input type="text" name="full name" placeholder="Your Name"></span>
                 </label>
-                <label> <span id="radio">
+                <label> <span Id="radio">
                     Email:
                         <input type="text" name="email" placeholder="email@email.com"> </span>
                 </label>
             
-                <label> <span id="radio">
+                <label> <span Id="radio">
                     Phone Number:
-                        <input type="text" name="phonenumber" placeholder="800-555-5555"> </span>
+                        <input type="text" name="phone-number" placeholder="800-555-5555"> </span>
                 </label>
             </form>
             </br>
@@ -238,14 +238,15 @@
                         <input type="radio" name="reasonforcontacting" value="Work Request">Work Request
                 </label> </span>
             
-                <p>
+                
                
                 <label>Comments:
         </br>
-            <textarea name="comment" rows="10" cols="100"></textarea>
+            <textarea id="comment" name="comment" rows="10" cols="100"></textarea>
                 </label></br>
-                <button type="button" class="btn btn-info" input type="submit">Submit</button>
-                    </p>
+                <button type="button" class="btn btn-info" id="button" input type="submit">Submit</button>
+               
+                    
             </form>
         </section>
 
@@ -266,11 +267,56 @@
                 </table>
             </section>
         -->
-<footer>
-    
-</footer>
+
+  <!-- Modal -->
+<div class="modal fade" id="getusername" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Hello World!">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label for="name">Please enter your name:</label>
+          <input type="text" id="name>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="greetUser();">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Modal -->
+<div class="modal fade" id="greetUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Hello World!">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label for="name">Hi <span id="userName"></span>!  Thank you for reviewing my resume site.</label>
+          <input type="text" id="name>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="greetUser();">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="JS/myJavaScript.js"></script>
 </body>
 </html>
