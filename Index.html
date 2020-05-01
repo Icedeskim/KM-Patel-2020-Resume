@@ -209,16 +209,16 @@
             <form method="POST">
                 <label> <span Id="radio">
                     Name:
-                        <input type="text" name="full name" placeholder="Your Name"></span>
+                        <input type="text" id='name' name="full name" placeholder="Your Name"></span>
                 </label>
                 <label> <span Id="radio">
                     Email:
-                        <input type="text" name="email" placeholder="email@email.com"> </span>
+                        <input type="text" id='name' name="email" placeholder="email@email.com"> </span>
                 </label>
             
                 <label> <span Id="radio">
                     Phone Number:
-                        <input type="text" name="phone-number" placeholder="800-555-5555"> </span>
+                        <input type="text" id='name' name="phone-number" placeholder="800-555-5555"> </span>
                 </label>
             </form>
             </br>
@@ -242,7 +242,7 @@
             </br>
             <textarea id="comment" name="comment" rows="10" cols="100"></textarea>
                 </label></br>
-                <input id="submit" type="submit" name="submit" onclick="getContactData();' class="btn btn-primary">        
+                <input id="submit" type="submit" name="submit" onclick="getContactData"(name); class="btn btn-primary">        
             </form>
         </section>
        
@@ -263,53 +263,57 @@
                 </table>
             </section>
         -->
-
-    
-        
-
-    
-    
-         
-          
-          
-        <div class="modal fade" id="greetUser" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="greetUserLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+      <div class="modal fade" id="getUserName" data-backdrop="static" tabindex="-1" role="dialog"
+          aria-labelledby="getUserNameLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <div class="modal-header">
-             
-               
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="getUserNameLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <label for="greetingName">Welcome. What's your name?</label>
+                      <input type="text" id="greetingName">
+                  </div>
                   <div class="modal-footer">
-                   
-                  
-                </div>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="greetUser();">Submit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
                 <div class="modal-body">
-                        <label for="name">Welcome.  What's your name?</label>
-                        <input type="text" id="greetingName">
+                      
                     </div>       
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="greetUser();">Submit</button>
+                
                     </div>
+                          <span aria-hidden="true">&times;</span>
                   </div>
+           
+            <div class="modal fade" id="greetUser" data-backdrop="static" tabindex="-1" role="dialog"
+                aria-labelledby="greetUserLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="greetUserLabel">:-)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hi <span id="userName"></span>! Thank you for reviewing my resume site. Feel free to contact me.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <p>Hi <span id="userName"></span>!  Thank you for reviewing my resume site.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          
-          </div>
-   
-        </div>
-      </div>
-    </div>
-  
- 
+            
 
   <footer></footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
